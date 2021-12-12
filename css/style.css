@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+}
+body {
+	height: 100vh;
+	background-image: linear-gradient(rgb(153, 96, 96), rgb(36, 36, 66), rgb(77, 66, 46));
+}
+.top__side {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+
+	align-items: center;
+}
+.top__side > img {
+	border-radius: 50%;
+	width: 20%;
+	height: 20%;
+}
+.top__side .hints {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.top__side .hints div {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	border: 2px solid rgb(62, 62, 236);
+	cursor: pointer;
+	border-radius: 50%;
+	font-size: 1.3rem;
+	color: white;
+	font-weight: bold;
+	background-color: rgb(53, 53, 143);
+	cursor: pointer;
+}
+
+.top__side .money {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: rgb(0, 0, 0);
+	gap: 0.1rem;
+	padding: 3px;
+	font-size: 16px;
+}
+.top__side .money h3 {
+	cursor: pointer;
+}
+
+.top__side .money p {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.top__side .money p span {
+	padding-right: 1rem;
+}
+.top__side .money .inviolable {
+	color: white;
+}
+
+.gamebar {
+	padding: 3% 5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+.gamebar .ques {
+	width: 100%;
+	border: white 1px solid;
+	background-color: rgb(22, 31, 36);
+	cursor: pointer;
+}
+.gamebar .ques {
+	padding: 3%;
+	font-size: 29px;
+	text-align: center;
+	color: white;
+}
+.gamebar .versions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.version {
+	width: 40%;
+	height: 80px;
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid white;
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+	text-align: center;
+	background-color: rgb(22, 31, 36);
+}
+.version p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#version1 {
+	order: 3;
+}
+#version2 {
+	order: 2;
+}
+@media screen and (max-width: 780px) {
+	img {
+		display: none;
+	}
+	.versions {
+		flex-direction: column;
+	}
+	.version {
+		width: 100%;
+		height: 50px;
+	}
+	.top__side .money {
+		
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.version {
+		font-size: 24px;
+	}
+	.versions {
+		flex-direction: column;
+	}
+	.version {
+		width: 100%;
+	}
+	.gamebar .ques {
+		font-size: 24px;
+	}
+}
