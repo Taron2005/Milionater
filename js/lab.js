@@ -382,6 +382,9 @@ take.addEventListener("click", () => {
 	stugel = 0;
 	stugel1 = 0;
 	stugel2 = 0;
+	hint1.style.display = "none";
+	hint2.style.display = "none";
+	hint3.style.display = "none";
 });
 hint1.addEventListener("click", hint1foo);
 hint2.addEventListener("click", hint2foo);
