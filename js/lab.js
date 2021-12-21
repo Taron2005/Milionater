@@ -222,10 +222,10 @@ function startAgain() {
 	}
 	questionLine.addEventListener("click", startGame);
 	this.removeEventListener("click", startAgain);
-	versions[0].style.display = "none";
-	versions[1].style.display = "none";
-	versions[2].style.display = "none";
-	versions[3].style.display = "none";
+// 	versions[0].style.display = "none";
+// 	versions[1].style.display = "none";
+// 	versions[2].style.display = "none";
+// 	versions[3].style.display = "none";
 }
 function startGame() {
 	if (j == 0) setNextQuestion();
