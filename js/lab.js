@@ -373,6 +373,7 @@ take.addEventListener("click", () => {
 	versions[1].style.display = "none";
 	versions[2].style.display = "none";
 	versions[3].style.display = "none";
+	questionLine.addEventListener("click", startGame);
 	for (let moneys of money) {
 		moneys.style.backgroundColor = "";
 		moneys.stylefontSize = "16px";
