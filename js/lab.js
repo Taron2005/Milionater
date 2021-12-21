@@ -369,6 +369,10 @@ take.addEventListener("click", () => {
 	versions[2].innerHTML = "";
 	versions[1].innerHTML = "";
 	versions[0].innerHTML = "";
+	versions[0].style.display = "none";
+	versions[1].style.display = "none";
+	versions[2].style.display = "none";
+	versions[3].style.display = "none";
 	for (let moneys of money) {
 		moneys.style.backgroundColor = "";
 		moneys.stylefontSize = "16px";
